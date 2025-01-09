@@ -15,9 +15,9 @@ describe("Library App Test Suite", function() {
     home_page.goToUrl("https://library-app.firebaseapp.com/");
   });
 
-  it("Given the Admin dropdown, when clicked, then it SHOULD display three items.", function() {
+  it("Given the Admin dropdown, when clicked, then it SHOULD display five items.", function() {
     home_page.adminDropdown().click();
-    home_page.adminDropdownItems().should.eventually.have.lengthOf(3);
+    home_page.adminDropdownItems().should.eventually.have.lengthOf(5);
   });
 
   it("Given no text in Email input, when you click 'Request Invitation' button, then the button's opacity should be 0.65.", function() {
